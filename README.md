@@ -1,8 +1,6 @@
 # TestChain.jl
 
-The aim of this work is to compare different modeling approaches and different modeling tools for a 3D chain.
-
-Based on the works from Uwe Fechner [Tethers.jl](https://github.com/ufechner7/Tethers.jl).
+Based on the works of Uwe Fechner [Tethers.jl](https://github.com/ufechner7/Tethers.jl).
 In addition to this monolithic model, a segmented chain model is introduced.
 
 All simulations are implemented in Julia programming language using
@@ -14,26 +12,25 @@ All simulations are implemented in Julia programming language using
 
 Modeling assumption for the **chain**:
 
-* Chain was separated in segments with the same length and mass
+* Chain was divided into segments with the same length and mass
 * No rotational friction between segments
-* Total chain length remains unchanged (no, reel in/out)
+* Total length of teh chain remains unchanged (no, reel in/out)
 
 
 
 Modeling assumption for a **segment**:
 
-* elongation due to forces with a defined stiffness and damping
+* strian due to forces with a defined stiffness and damping
 * segment has only one mass and no inertia
 * on the connection points only forces are considered - no torques are applied on the segment
-* no friction due to movement in air
+* no friction due to movement in the air
 
 ![dcdc](./docs/Segment.svg)
 
 
 ## Modeling approach
 
-For easier comparison of the results, the models are reduced. At the beginning a very simple
-approach was used (level 0). In the future the restriction are removed step by step.
+The models are reduced to make it easier to compare the results. At the beginning, a very simple approach was used (level 0). In the future, the restrictions will be removed step by step.
 
 
 | level | comment |
@@ -46,8 +43,9 @@ approach was used (level 0). In the future the restriction are removed step by s
 
 ## Testcase - level 0
 
-For testing the different models the original parameter-setting, with some
-modifications was used.
+For testing the various models, the original parameter settings were used with a few
+changes.
+
 
 ```julia
 @with_kw mutable struct Settings3 @deftype Float64
