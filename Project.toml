@@ -1,0 +1,16 @@
+name = "TestChain"
+uuid = "e3231e32-cc4b-434d-98ae-97f02f4999fd"
+authors = ["Johann Hell <hans.hell@gmx.at>"]
+version = "0.1.0"
+
+[deps]
+HDF5 = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
+Modia = "cb905087-75eb-5f27-8515-1ce0ec8e839e"
+ModiaBase = "ec7bf1ca-419d-4510-bbab-199861c55244"
+SignalTables = "3201582d-3078-4276-ba5d-0a1254d79d7c"
+
+[compat]
+HDF5 = "0.17.2"
+Modia = "0.12.1"
+ModiaBase = "0.11.1"
+SignalTables = "0.4.4"
