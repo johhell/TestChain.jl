@@ -79,7 +79,7 @@ se = Settings3(; segments=5,v_ro=0.0, v_wind_tether=[0.00,0.0,0.01], rho=0.0)
 
 The following 3 models are considered
 
-- `Tether_07mod0.jl` - the **original (monolithic) version** using MTK ecosystem
+* `Tether_07mod0.jl` - the **original (monolithic) version** using MTK ecosystem
 * `SegMTKLev0.jl` - acausal model with connected segments using **MTK** ecosystem
 * `SegModiaLev0.jl` - acausal model with connected segments using **Modia** ecosystem
 
